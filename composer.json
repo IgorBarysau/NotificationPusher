@@ -42,8 +42,8 @@
         "symfony/console": ">=2.3,<6",
         "symfony/process": ">=2.3,<5",
         "laminas/laminas-http": "2.x",
-        "machobearstudio/zendservice-apple-apns": "2.*",
-        "machobearstudio/zendservice-google-gcm": "3.*",
+        "machobearstudio/zendservice-apple-apns": "dev-master",
+        "machobearstudio/zendservice-google-gcm": "dev-master",
         "doctrine/inflector": "~1.1",
         "symfony/filesystem": ">=2.3,<5",
         "symfony/error-handler": "*"
