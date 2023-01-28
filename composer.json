@@ -2,14 +2,14 @@
     "repositories": [
         {
             "type": "github",
-            "url": "https://github.com/ohdonpiano/ZendService_Apple_Apns"
+            "url": "https://github.com/machobearstudio/ZendService_Apple_Apns"
         },
         {
             "type": "github",
-            "url": "https://github.com/ohdonpiano/ZendService_Google_Gcm"
+            "url": "https://github.com/machobearstudio/ZendService_Google_Gcm"
         }
     ],
-    "name": "sly/notification-pusher",
+    "name": "machobearstudio/notification-pusher",
     "description": "Standalone PHP library for easy devices notifications push.",
     "keywords": [
         "apple",
