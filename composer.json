@@ -45,14 +45,14 @@
         "machobearstudio/zendservice-apple-apns": "dev-master",
         "machobearstudio/zendservice-google-gcm": "dev-master",
         "doctrine/inflector": "~1.1",
-        "symfony/filesystem": ">=2.3,<5",
+        "symfony/filesystem": ">=2.3,<7",
         "symfony/error-handler": "*"
     },
     "require-dev": {
         "atoum/atoum": "4.*",
         "atoum/stubs": "2.*",
         "atoum/visibility-extension": "2.*",
-        "symfony/var-dumper": ">=2.3,<5"
+        "symfony/var-dumper": ">=2.3,<7"
     },
     "config": {
         "bin-dir": "bin"
