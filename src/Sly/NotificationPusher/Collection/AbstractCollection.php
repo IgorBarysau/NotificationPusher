@@ -17,6 +17,7 @@ use Exception;
 use IteratorAggregate;
 use ReturnTypeWillChange;
 use SeekableIterator;
+use Sly\NotificationPusher\Model\DeviceInterface;
 use Sly\NotificationPusher\Model\MessageInterface;
 
 /**
@@ -41,7 +42,7 @@ abstract class AbstractCollection implements IteratorAggregate, Countable
      *
      * @return MessageInterface|false
      */
-    public function get(string $key): bool|MessageInterface
+    public function get(string $key): bool|MessageInterface|DeviceInterface
     {
         return isset($this->coll[$key]) ? $this->coll[$key] : false;
     }
