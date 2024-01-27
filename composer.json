@@ -9,7 +9,7 @@
             "url": "https://github.com/machobearstudio/ZendService_Google_Gcm"
         }
     ],
-    "name": "machobearstudio/notification-pusher",
+    "name": "igorbarysau/notification-pusher",
     "description": "Standalone PHP library for easy devices notifications push.",
     "keywords": [
         "apple",
