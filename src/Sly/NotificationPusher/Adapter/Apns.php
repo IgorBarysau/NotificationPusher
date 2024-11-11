@@ -72,9 +72,9 @@ class Apns extends BaseAdapter implements FeedbackAdapterInterface
         $pushedDevices = new DeviceCollection();
 
         foreach ($push->getDevices() as $device) {
-            $message = $this->getServiceMessageFromOrigin($device, $push->getMessage());
 
             try {
+                $message = $this->getServiceMessageFromOrigin($device, $push->getMessage());
                 /** @var ServiceResponse $response */
                 $response = $client->send($message);
 
