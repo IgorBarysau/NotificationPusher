@@ -96,7 +96,31 @@ class Apns extends BaseAdapter implements FeedbackAdapterInterface
                 $this->response->addOriginalResponse($device, $response);
                 $this->response->addParsedResponse($device, $responseArr);
             } catch (\RuntimeException $e) {
-                throw new PushException($e->getMessage());
+                $responseArr = [
+                    'error' => $e->getMessage(),
+                    'response' => 'fail',
+                ];
+
+                $push->addResponse($device, $responseArr);
+
+                $client->close();
+                unset($this->openedClient, $client);
+                // Assign returned new client to the in-scope/in-use $client variable
+                $client = $this->getOpenedServiceClient();
+
+            }catch (\Exception $e) {
+
+                $responseArr = [
+                    'error' => $e->getMessage(),
+                    'response' => 'fail',
+                ];
+
+                $push->addResponse($device, $responseArr);
+
+                $client->close();
+                unset($this->openedClient, $client);
+                // Assign returned new client to the in-scope/in-use $client variable
+                $client = $this->getOpenedServiceClient();
             }
         }
 
